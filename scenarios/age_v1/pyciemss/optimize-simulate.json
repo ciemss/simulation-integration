@@ -1,0 +1,23 @@
+{
+  "engine": "ciemss",
+  "username": "not_provided",
+  "model_config_id": "age_vacc_var_v2_config",
+  "timespan": {
+    "start": 0,
+    "end": 19
+  },
+  "interventions": [
+    {
+      "timestep": 20,
+      "name": "chi_0"
+    }
+  ],
+  "qoi":  {"function": "scenario2dec_nday_average", "state": "I_0_0_sol", "arg":2},
+  "risk_bound": 1.0,
+  "initial_guess": 0.2,
+  "bounds": [[0.0], [1.0]],
+  "extra": {
+    "num_samples": 5,
+    "n_samples_ouu": 5
+  }
+}
