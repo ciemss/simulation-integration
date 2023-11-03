@@ -169,21 +169,6 @@ services:
     depends_on:
       pyciemss-api:
         condition: service_started
-  sciml-service:
-    image: ghcr.io/darpa-askem/simulation-service:latest
-    environment:
-      - SIMSERVICE_TDS_URL=http://data-service:8000
-      - ENABLE_REMOTE_DATA_HANDLING=false
-    ports:
-      - 8080
-    depends_on:
-      data-service:
-        condition: service_started
-    healthcheck:
-      test: curl http://localhost:8080/ || exit 1
-      interval: 10s
-      timeout: 20s
-      retries: 30
   tests:
     build:
       context: .
@@ -198,5 +183,3 @@ services:
         condition: service_healthy
       pyciemss-worker:
         condition: service_started
-      sciml-service:
-        condition: service_healthy

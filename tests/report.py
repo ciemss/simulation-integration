@@ -14,7 +14,7 @@ logging.getLogger().setLevel(logging.INFO)
 
 TDS_URL = os.environ.get("TDS_URL", "http://data-service:8000")
 PYCIEMSS_URL = os.environ.get("PYCIEMSS_URL", "http://pyciemss-api:8000")
-SCIML_URL = os.environ.get("SCIML_URL", "http://sciml-service:8080")
+# SCIML_URL = os.environ.get("SCIML_URL", "http://sciml-service:8080")
 BUCKET = os.environ.get("BUCKET", None)
 UPLOAD = os.environ.get("UPLOAD", "FALSE").lower() == "true"
 
@@ -61,9 +61,9 @@ def gen_report():
             "PyCIEMSS Service": {
                 "version": get_version(PYCIEMSS_URL)
             },
-            "SciML Service": {
-                "version": get_version(SCIML_URL)
-            },
+#            "SciML Service": {
+#                "version": get_version(SCIML_URL)
+#            },
         }
     }
 

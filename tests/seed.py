@@ -8,8 +8,12 @@ TDS_URL = os.environ.get("TDS_URL", "http://data-service:8000")
 
 model_configs = glob("./data/models/*.json")
 for config_path in model_configs:
+    print(config_path)
     config = json.load(open(config_path, 'rb'))
-    model = config["configuration"]
+    if "configuration" not in config:
+        print(config_path)
+    else:
+        model = config["configuration"]
     model_response = requests.post(TDS_URL + "/models", json=model, headers={
         "Content-Type": "application/json"
     })
