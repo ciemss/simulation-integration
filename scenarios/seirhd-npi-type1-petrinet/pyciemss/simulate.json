@@ -1,7 +1,7 @@
 {
   "engine": "ciemss",
   "username": "not_provided",
-  "model_config_id": "sir-stockflow",
+  "model_config_id": "seirhd-npi-type1-petrinet",
   "timespan": {
     "start": 0,
     "end": 30

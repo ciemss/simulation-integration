@@ -1,13 +1,13 @@
 {
-  "engine": "ciemss",
+  "engine": "sciml",
   "username": "not_provided",
-  "model_config_id": "sir-stockflow",
+  "model_config_id": "seirhd-with-reinfection01-petrinet",
   "dataset": {
     "id": "traditional",
     "filename": "traditional.csv",
     "mappings": {
       "tstep": "Timestamp",
-      "Infected": "Infected"
+      "Infected": "I"
     }
   },
   "timespan": {
@@ -20,7 +20,6 @@
     "num_iterations": 1000,
     "lr": 0.03,
     "verbose": false,
-    "num_particles": 1,
-    "method": "dopri5"
+    "num_particles": 1
   }
 }

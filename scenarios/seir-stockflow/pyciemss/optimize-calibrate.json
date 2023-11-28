@@ -1,7 +1,7 @@
 {
   "engine": "ciemss",
   "username": "not_provided",
-  "model_config_id": "SEIRD-base-model01-petrinet",
+  "model_config_id": "seir-stockflow",
   "dataset": {
     "id": "optimize",
     "filename": "optimize.csv"

@@ -1,13 +1,13 @@
 {
   "engine": "ciemss",
   "username": "not_provided",
-  "model_config_id": "sir-stockflow",
+  "model_config_id": "seirhd-npi-type2-petrinet",
   "dataset": {
     "id": "traditional",
     "filename": "traditional.csv",
     "mappings": {
       "tstep": "Timestamp",
-      "Infected": "Infected"
+      "Infected": "I"
     }
   },
   "timespan": {
