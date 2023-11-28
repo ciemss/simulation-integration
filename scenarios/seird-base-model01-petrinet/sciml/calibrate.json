@@ -1,0 +1,25 @@
+{
+  "engine": "sciml",
+  "username": "not_provided",
+  "model_config_id": "SEIRD-base-model01-petrinet",
+  "dataset": {
+    "id": "traditional",
+    "filename": "traditional.csv",
+    "mappings": {
+      "tstep": "Timestamp",
+      "Infected": "I"
+    }
+  },
+  "timespan": {
+    "start": 0,
+    "end": 30
+  },
+  "extra": {
+    "num_samples": 100,
+    "start_time": -1e-10,
+    "num_iterations": 1000,
+    "lr": 0.03,
+    "verbose": false,
+    "num_particles": 1
+  }
+}

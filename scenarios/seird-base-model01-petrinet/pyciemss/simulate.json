@@ -4,7 +4,7 @@
   "model_config_id": "SEIRD-base-model01-petrinet",
   "timespan": {
     "start": 0,
-    "end": 90
+    "end": 30
   },
   "extra": {
     "num_samples": 100
