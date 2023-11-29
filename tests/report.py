@@ -75,7 +75,7 @@ def gen_report():
             path = f"scenarios/{scenario}/{backend}"
             if os.path.exists(path):
                 scenario_spec[backend] = [f for f in os.listdir(f"scenarios/{scenario}/{backend}")
-                                          if f.endswith(".json")] # only grab json files (ignore hidden notebooks)
+                                          if f.endswith(".json")] # only grab json files (ignore hidden notebooks)t
         for service_name, tests in scenario_spec.items():
             for test_file in tests:
                 test = test_file.split(".")[0]
