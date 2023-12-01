@@ -13,7 +13,7 @@
   "interventions": [
     {
       "timestep": 20,
-      "name": "beta"
+      "name": "p_cbeta"
     }
   ],
   "qoi":  {"function": "scenario2dec_nday_average", "state": "Infected_sol", "arg":2},
