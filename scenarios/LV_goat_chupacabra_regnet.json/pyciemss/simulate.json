@@ -1,0 +1,12 @@
+{
+  "engine": "ciemss",
+  "username": "not_provided",
+  "model_config_id": "LV-goats-chupacabra-regnet",
+  "timespan": {
+    "start": 0,
+    "end": 30
+  },
+  "extra": {
+    "num_samples": 100
+  }
+}
